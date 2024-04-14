@@ -13,7 +13,7 @@ onMounted( async () => {
 
 
 <template>
- <div class="p-8 bg-gray-300 min-h-screen">
+ <div class="p-8 bg-gray-400 min-h-screen">
     <DataTable :items="items"/>
  </div>
 </template>
