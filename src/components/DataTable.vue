@@ -5,23 +5,49 @@ import FilterDropDown from './FilterDropDown.vue';
 import FilterRadios from './FilterRadios.vue';
 
 const searchFilter = ref('');
+const radioFilter = ref('');
 
 const props = defineProps({
+    
     items: {
         type: Array,
         required: true
     }
+
 });
 
 const filterdItems = computed(()=>{
+    
+    let items = props.items;
+    
+    switch(radioFilter.value){
+        case 'today':
+            items = items.filter(item=> new Date(item.createdAt).getDate() == new Date().getDate());
+            break;
+        case 'past':
+        items = items.filter(item=> new Date(item.createdAt).getDate() < new Date());
+            break;
+    };
+
     if(searchFilter.value != '')
-        return props.items.filter(item => item.code.includes(searchFilter.value))  
-    else
-        return props.items;
+        items = items.filter(item => item.code.includes(searchFilter.value))  
+   
+    return items;
+
 });
+
 const handleSearch = (search)=>{
+
     searchFilter.value = search;
+
 };
+
+const handleRadioFilter = (filter)=>{
+
+    radioFilter.value = filter;
+
+};
+
 </script>
 
 <template>
@@ -29,15 +55,15 @@ const handleSearch = (search)=>{
         <div class="flex items-center justify-between">
             <SearchForm @search="handleSearch" />             
                 <div class="flex items-center justify-end text-sm font-semibold ">
-                    <FilterRadios />                                
+                    <FilterRadios @filter="handleRadioFilter" />                                
                     <FilterDropDown />
                 </div>   
         </div>
-        <table class="w-full text-sm text-left text-gray-500">
-            <thead class="text-lg text-gray-700  bg-gray-100">
+        <table class="w-full text-xl text-left text-gray-500 font-mono">
+            <thead class="text-xl text-gray-700  bg-gray-100">
                 <tr>
                     <th class="px-4 py-3">Code</th>
-                    <th class="px-4 py-3">Create At</th>
+                    <th class="px-4 py-3">Created At</th>
                     <th class="px-4 py-3">Status</th>          
                     <th class="px-4 py-3">
                         <span class="sr-only">Actions</span>
