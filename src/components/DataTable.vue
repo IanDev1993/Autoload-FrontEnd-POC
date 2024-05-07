@@ -24,8 +24,12 @@
         
         switch(radioFilter.value){
             case 'today':
-                items = items.filter(item=> new Date(item.createdAt).getDate() == new Date().getDate());
-                break;  
+                items = items.filter(item => 
+                    new Date(item.createdAt).getDate() == new Date().getDate() && 
+                    new Date(item.createdAt).getMonth() == new Date().getMonth() &&
+                    new Date(item.createdAt).getFullYear() == new Date().getFullYear()
+                );
+            break;  
         };
 
         if(searchFilter.value != '')
@@ -53,10 +57,10 @@
     <div class="bg-white relative border rounded-lg">
         <div class="flex items-center justify-between">
             <SearchForm @search="handleSearch" />             
-                <div class="flex items-center justify-end text-sm font-semibold ">
-                    <FilterRadios @filter="handleRadioFilter" />                                
-                    <FilterDropDown />
-                </div>   
+            <div class="flex items-center justify-end text-sm font-semibold ">
+                <FilterRadios @filter="handleRadioFilter" />                                
+                <FilterDropDown />
+            </div>   
         </div>
         <table class="w-full text-xl text-left text-gray-500 font-mono">
             <thead class="text-xl text-gray-700  bg-gray-100">
