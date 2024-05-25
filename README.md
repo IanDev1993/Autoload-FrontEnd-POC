@@ -1,6 +1,6 @@
 ## Sobre o projeto
 `Autoload 4drvs` é uma solução criada para amplificar o alcançe do autoload no espectro de serviços mobile.
-
+Nesta solução encontra-se a aplicação frontend responsável pelo monitor de chamadas.
 ### Stack
 - [x] ![Vue](https://img.shields.io/badge/Vue%20js-35495E?style=for-the-badge&logo=vuedotjs&logoColor=4FC08D)
 - [x] ![TailwindCSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)
