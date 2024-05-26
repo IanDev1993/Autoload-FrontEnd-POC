@@ -1,5 +1,5 @@
 ## Sobre o projeto
-`Autoload-FrontEnd-POC` representa um protótipo do monitor de chamadas do autoload que faz parte do conjunto de soluções do `Autoload 4drvs`
+`Autoload-FrontEnd-POC` representa um protótipo do monitor de chamadas do autoload que deve ser encorporado ao conjunto de soluções propostas para o `Autoload 4drvs`
 ### Stack
 - [x] ![Vue](https://img.shields.io/badge/Vue%20js-35495E?style=for-the-badge&logo=vuedotjs&logoColor=4FC08D)
 - [x] ![TailwindCSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)
@@ -11,42 +11,31 @@
 
 - IDE recomendada [VS Code](https://code.visualstudio.com/) 
 
-* npm
-  ```sh
-  npm install npm@latest -g
-  ```
+Abaixo um exemplo de como buildar a aplicação
 
-### Installation
+1. Clone o repo
+2. Baixe [Node.js](https://nodejs.org/en/)   
+3. Verifique se o node foi instalado 
+   `node --version`
+4. Instale o Vue.js
+   `npm install -g @vue/cli`
+ 5. Atualize pacotes do Vue.js
+   `npm update -g @vue/cli`
+ 6. Verifique se o Vue foi instalado
+   `vue --version`
+  7. Acesse a pasta onde você clonou o projeto e digite
+    `npm run dev`
 
-_Below is an example of how you can instruct your audience on installing and setting up your app. This template doesn't rely on any external dependencies or services._
-
-1. Get a free API Key at [https://example.com](https://example.com)
-2. Clone the repo
-   ```sh
-   git clone https://github.com/your_username_/Project-Name.git
-   ```
-3. Install NPM packages
-   ```sh
-   npm install
-   ```
-4. Enter your API in `config.js`
-   ```js
-   const API_KEY = 'ENTER YOUR API';
-   ```
-
-<!-- CONTRIBUTING -->
 ## Contribuição
 
-Para você que quer contribuir comigo mande seu PR "Omilde".
+faça seu PR "Omilde".
 
-1. Clone o repositório na sua máquina
-2. Cria sua branch (`git checkout -b feature/AmazingFeature`)
-3. Faça suas mudanças (`git commit -m 'Add some AmazingFeature'`)
-4. Envie ao repositório (`git push origin feature/AmazingFeature`)
-5. Abra o PR
-6. Aguarde... 🌃💤
-   
-
+1. Cria sua branch (`git checkout -b feature/AmazingFeature`)
+2. Faça suas mudanças (`git commit -m 'Add some AmazingFeature'`)
+3. Envie ao repositório (`git push origin feature/AmazingFeature`)
+4. Abra o PR
+5. Aguarde... 🌃💤
+ 
 ## Licença
 
 Mande aquele pix 💰💰💰 pra fortalecer o nosso trabalho 🤣🤣
