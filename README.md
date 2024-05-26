@@ -1,5 +1,5 @@
 ## Sobre o projeto
-`Autoload-FrontEnd-POC` representa um protótipo do monitor de chamadas do autoload. Nesta solução encontra-se o esboço da aplicação frontend responsável por integrar o novo checkin e demais funcionalidades escaláveis à interfaces do usuário web.
+`Autoload-FrontEnd-POC` representa um protótipo do novo monitor de chamadas do autoload. Nesta solução encontra-se o esboço da aplicação frontend responsável por integrar o novo checkin e demais funcionalidades escaláveis à interfaces do usuário web.
 
 `Autoload 4drvs` é uma solução criada para amplificar o alcançe do autoload no espectro de serviços mobile. 
 ### Stack
